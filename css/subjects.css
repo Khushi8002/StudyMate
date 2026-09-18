@@ -1,0 +1,94 @@
+
+.subject-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.subject-card {
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    background: white;
+    transition: 0.3s;
+}
+
+.subject-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow);
+}
+
+.subject-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.blue {
+    background: #e5efff;
+    color: #3675ed;
+}
+
+.purple {
+    background: #eee7ff;
+    color: #8055e8;
+}
+
+.orange {
+    background: #fff0df;
+    color: #ef8a27;
+}
+
+.green {
+    background: #e1f8ed;
+    color: #159b69;
+}
+
+.pink {
+    background: #ffe8f1;
+    color: #e04f91;
+}
+
+.yellow {
+    background: #fff6d9;
+    color: #c18a08;
+}
+
+.subject-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.subject-card > p {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 15px;
+}
+
+.subject-card ul {
+    margin-bottom: 22px;
+    padding-left: 18px;
+    list-style: disc;
+    color: #4b5563;
+    font-size: 13px;
+}
+
+.subject-card li {
+    margin: 5px 0;
+}
+
+@media (max-width: 850px) {
+    .subject-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .subject-grid {
+        grid-template-columns: 1fr;
+    }
+}

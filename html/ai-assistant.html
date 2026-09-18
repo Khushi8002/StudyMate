@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant | StudyMate</title>
+
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/assistant.css">
+    <script src="../JS/assistant.js" defer></script>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <script src="../JS/assistant.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+    <nav class="navbar container">
+        <a href="../index.html" class="logo">
+            <i class="fa-solid fa-graduation-cap"></i> StudyMate
+        </a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="subjects.html">Subjects</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a class="active" href="ai-assistant.html">AI Assistant</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="assistant-page">
+    <section class="page-banner">
+        <div class="container">
+            <span class="tag">Your Study Companion</span>
+            <h1>StudyMate <span>AI Assistant</span></h1>
+            <p>Ask a question and get a helpful study response.</p>
+        </div>
+    </section>
+
+    <section class="chat-section container">
+        <div class="chat-card">
+            <div class="chat-header">
+                <div class="bot-avatar">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <div>
+                    <h2>StudyMate Bot</h2>
+                    <p><span class="online-dot"></span> Demo assistant online</p>
+                </div>
+                <button type="button" id="clear-chat" class="clear-btn"
+                        title="Clear conversation" aria-label="Clear conversation">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+
+            <div class="chat-messages" id="chat-messages"
+                 aria-live="polite" aria-label="Chat messages">
+                <div class="message bot-message">
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>
+                            Hello! 👋 I'm StudyMate Bot. Ask me about HTML,
+                            CSS, JavaScript, Python, C programming, or study tips.
+                        </p>
+                        <span class="message-time">Now</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="suggestions">
+                <p>Try asking:</p>
+                <button type="button" class="suggestion-btn"
+                        data-question="What is HTML?">What is HTML?</button>
+                <button type="button" class="suggestion-btn"
+                        data-question="Explain CSS">Explain CSS</button>
+                <button type="button" class="suggestion-btn"
+                        data-question="Give me study tips">Study tips</button>
+            </div>
+
+            <form id="chat-form" class="chat-form">
+                <input type="text" id="user-input"
+                       placeholder="Type your question here..."
+                       autocomplete="off" required>
+                <button type="submit" aria-label="Send message">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+
+            <p class="chat-note">
+                <i class="fa-solid fa-circle-info"></i>
+                Demo version: answers come from predefined JavaScript responses.
+            </p>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-content">
+        <a href="../index.html" class="logo">
+            <i class="fa-solid fa-graduation-cap"></i> StudyMate
+        </a>
+        <p>Learn smarter, every day.</p>
+        <p>© 2026 StudyMate. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
